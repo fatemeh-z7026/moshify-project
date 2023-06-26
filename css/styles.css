@@ -79,7 +79,7 @@ a {
   margin-left: 5px;
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width: 1024px) {
   .link-arrow {
     font-size: 1.5rem;
   }
@@ -87,33 +87,63 @@ a {
 
 /*Badges*/
 
-.badge{
+.badge {
   border-radius: 20px;
   font-size: 2rem;
   font-weight: 600;
-  padding: .5rem 2rem;
+  padding: 0.5rem 2rem;
   white-space: nowrap;
 }
 
-.badge--primary_{
+.badge--primary_ {
   background-color: var(--color-primary);
   color: #fff;
 }
-.badge--secondary{
-background-color: var(--color-secondary);
-color: #fff;
+.badge--secondary {
+  background-color: var(--color-secondary);
+  color: #fff;
 }
 
-.badge--small{
+.badge--small {
   font-size: 1.6rem;
 }
 
-@media screen and (min-width:1024px) {
-  .badge{
+@media screen and (min-width: 1024px) {
+  .badge {
     font-size: 1.5rem;
   }
 
-  .badge--small{
+  .badge--small {
     font-size: 1.2rem;
   }
 }
+
+/*Lists*/
+
+.list {
+  list-style: none;
+  padding-left: 0;
+  color: var(--color-heading);
+}
+
+.list--inline .list__item {
+  display: inline-block;
+  margin-right: 2rem;
+}
+
+.list--tick {
+  list-style-image: url(../images/svg/tick.svg);
+  padding-left: 4rem;
+
+}
+ .list--tick .list__item{
+  padding-left: 0.5rem;
+  margin-bottom: 1rem;
+ }
+
+ @media screen and (min-width) {
+  .list--tick .list__item{
+    padding-left: 0;
+  }
+  
+ }
