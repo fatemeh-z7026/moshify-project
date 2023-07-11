@@ -333,12 +333,12 @@ a {
 }
 
 /*Plan*/
-.plan{
-  transition: transform .2s ease-out;
+.plan {
+  transition: transform 0.2s ease-out;
 }
-.plan:hover{
+.plan:hover {
   transform: scale(1.05);
-} 
+}
 .plan__name {
   color: #fff;
   margin: 0;
@@ -367,14 +367,12 @@ a {
   margin-bottom: 2rem;
 }
 
-
 .plan--popular {
   transform: scale(1.1);
 }
-.plan--popular:hover{
+.plan--popular:hover {
   transform: scale(1.13);
-
-} 
+}
 .plan--popular .card__header {
   position: relative;
 }
@@ -731,10 +729,37 @@ a {
 
 /*Plans Block*/
 .block-plans .grid {
-  gap:8rem 4rem;
+  gap: 8rem 4rem;
 }
 
 .block-plans .card {
   max-width: 500px;
   margin: 0 auto;
+}
+
+/*Features*/
+
+.feature {
+  gap: 4rem 2rem;
+  margin: 12rem 0;
+}
+
+.feature__heading {
+  margin: 1rem 0;
+}
+
+.feature__img {
+  width: 100%;
+  margin: 5rem 0;
+}
+
+.feature:first-of-type {
+  margin-top: 6rem;
+}
+
+@media screen and (min-width:768px) {
+  .feature:nth-of-type(even) .feature__content {
+    order:2;
+  }
+  
 }
