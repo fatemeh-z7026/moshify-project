@@ -205,11 +205,11 @@ a {
   outline: 0;
 }
 
-.btn .icon{
+.btn .icon {
   width: 2rem;
   height: 2rem;
-  margin-right:1rem;
-  vertical-align: middle ;
+  margin-right: 1rem;
+  vertical-align: middle;
 }
 
 .btn--primary {
@@ -324,12 +324,21 @@ a {
   color: #fff;
 }
 
+.card--primary .badge--primary_ {
+  background: #126de4;
+}
+
 .card--secondary .badge--secondary {
   background: #02cdf1;
 }
 
 /*Plan*/
-
+.plan{
+  transition: transform .2s ease-out;
+}
+.plan:hover{
+  transform: scale(1.05);
+} 
 .plan__name {
   color: #fff;
   margin: 0;
@@ -358,6 +367,14 @@ a {
   margin-bottom: 2rem;
 }
 
+
+.plan--popular {
+  transform: scale(1.1);
+}
+.plan--popular:hover{
+  transform: scale(1.13);
+
+} 
 .plan--popular .card__header {
   position: relative;
 }
@@ -641,7 +658,7 @@ a {
   box-shadow: 0 0 0 3px #666;
   border-radius: 5px;
 }
-.nav__brand{
+.nav__brand {
   transform: translateY(5px);
 }
 
@@ -661,56 +678,63 @@ a {
     border-bottom: 0;
   }
 }
- 
+
 /*Hero*/
 
-.hero{
+.hero {
   clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
 }
 
-.hero__tagline{
+.hero__tagline {
   font-size: 2rem;
   color: #b9c3cf;
   letter-spacing: 1px;
   margin: 2rem 0 5rem;
-
 }
 
-.hero__image{
+.hero__image {
   width: 100%;
 }
 
 @media screen and (min-width: 768px) {
- 
-  .hero__content{
+  .hero__content {
     text-align: left;
-    align-self:center ;
+    align-self: center;
   }
-  .hero{
+  .hero {
     padding-top: 0;
   }
 }
 /*Block Domain*/
 
 .block-domain .input-group {
-box-shadow:  0 0 30px 20px #e6ebee;
-border: 0;
-margin: 4rem 0;
+  box-shadow: 0 0 30px 20px #e6ebee;
+  border: 0;
+  margin: 4rem 0;
 }
-.block-domain__prices{
+.block-domain__prices {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
-  grid-template-rows: repeat(2,6rem);
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 6rem);
   font-size: 2rem;
   font-weight: 600;
   justify-items: center;
   max-width: 700px;
   margin: 0 auto;
- 
 }
 
-@media screen and (min-width:768px) {
-  .block-domain__prices{
-    grid-template-columns: repeat(auto-fit, minmax(10rem,1fr));
-  }  
+@media screen and (min-width: 768px) {
+  .block-domain__prices {
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  }
+}
+
+/*Plans Block*/
+.block-plans .grid {
+  gap:8rem 4rem;
+}
+
+.block-plans .card {
+  max-width: 500px;
+  margin: 0 auto;
 }
