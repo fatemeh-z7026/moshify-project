@@ -39,6 +39,7 @@ h3 {
   color: var(--color-heading);
   margin-bottom: 1rem;
   line-height: 1.1;
+  text-transform: capitalize;
 }
 
 h1 {
